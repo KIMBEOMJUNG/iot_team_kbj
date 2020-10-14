@@ -6,23 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MypageActivity extends AppCompatActivity {
+public class NoteListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.mypage);
+        setContentView(R.layout.activity_note_list);
     }
 
-    public void gomountlist(View v){
+    public void gomypage(View v){
         Intent i1;
-        i1 = new Intent(this, MountListActivity.class);
-        startActivity(i1);
-    }
-
-    public void gonotelist(View v){
-        Intent i1;
-        i1 = new Intent(this, NoteListActivity.class);
+        i1 = new Intent(this, MypageActivity.class);
         startActivity(i1);
     }
 
